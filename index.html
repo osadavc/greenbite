@@ -12,21 +12,44 @@
     <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
+    <!-- Hero Section -->
     <section class="hero">
-      <header class="hero__header">
+      <!-- Header -->
+      <header class="header__header">
         <div>
           <div class="header__logo">
             <span class="logo__accent">Green</span>Bite
           </div>
         </div>
 
-        <div class="hero__nav">
-          <ul class="hero__nav-list">
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">Tools</a></li>
+        <div class="header__nav">
+          <ul>
+            <li>
+              <a href="/recipes">Recipes</a>
+            </li>
+
+            <li class="header__nav-item--dropdown">
+              <a href="#" class="header__nav-link--dropdown">Tools</a>
+
+              <ul class="header__dropdown">
+                <li>
+                  <a href="/nutrition-calculators">Nutrition Calculators</a>
+                </li>
+
+                <li>
+                  <a href="/workout-generator">Workout Generator</a>
+                </li>
+
+                <li>
+                  <a href="/mindfulness-activity">Mindfulness Activity</a>
+                </li>
+              </ul>
+            </li>
           </ul>
 
-          <button class="hero__nav-cta">Contact Us</button>
+          <button class="header__nav-cta">
+            <a href="/contact">Contact Us</a>
+          </button>
         </div>
       </header>
     </section>
