@@ -19,11 +19,7 @@ body {
 /* Navigation Menu */
 
 .header__header {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.7),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   position: fixed;
   width: 100%;
 }
