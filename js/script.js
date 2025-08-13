@@ -19,3 +19,22 @@ if (dropdownItem && dropdownToggle) {
     }
   });
 }
+
+const newsletterForm = document.querySelector(".footer__form");
+
+if (newsletterForm) {
+  newsletterForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const email = e.target.elements.namedItem("email").value.trim();
+
+    try {
+      if (email) {
+        localStorage.setItem("newsletter_email", email);
+
+        const emailInput = document.querySelector(".footer__message");
+        emailInput.style.display = "block";
+      }
+    } catch (err) {}
+  });
+}

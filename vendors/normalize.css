@@ -180,6 +180,17 @@ input {
 }
 
 /**
+ * Remove border on focused inputs
+ */
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: none;
+  outline: none;
+}
+
+/**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
