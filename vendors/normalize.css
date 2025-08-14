@@ -379,8 +379,6 @@ a:active,
 a:visited {
   color: inherit;
   text-decoration: none;
-  background: none;
-  outline: none;
 }
 
 /**
