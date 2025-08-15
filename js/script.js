@@ -38,3 +38,21 @@ if (newsletterForm) {
     } catch (err) {}
   });
 }
+
+const headerEl = document.querySelector(".header__header");
+const HEADER_SOLID_SCROLL_Y = 100;
+
+if (headerEl) {
+  const updateHeaderSolidState = () => {
+    const scrollY = window.scrollY;
+    if (scrollY >= 100) {
+      headerEl.classList.add("header__header--solid");
+    } else {
+      headerEl.classList.remove("header__header--solid");
+    }
+  };
+
+  window.addEventListener("scroll", updateHeaderSolidState, { passive: true });
+  window.addEventListener("resize", updateHeaderSolidState);
+  updateHeaderSolidState();
+}
