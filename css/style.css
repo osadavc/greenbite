@@ -108,7 +108,7 @@ html {
 .header__header--solid {
   background: #fff;
   color: #111;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
 .header__header--solid .header__nav-link--dropdown::after {

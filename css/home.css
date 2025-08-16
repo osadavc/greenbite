@@ -205,6 +205,49 @@
   background-color: var(--color-primary);
 }
 
+/* Daily Health Tip */
+.daily-health-tip {
+  background-color: color-mix(in srgb, var(--color-primary) 8%, white);
+  border-top: 1px solid #e8f6f0;
+  border-bottom: 1px solid #eee;
+}
+
+.daily-health-tip__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+
+.daily-health-tip__header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.daily-health-tip__title {
+  font-family: var(--font-primary);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.daily-health-tip__date {
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #2a7a56;
+}
+
+.daily-health-tip__tip {
+  margin-top: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #123;
+}
+
 @media (max-width: 960px) {
   .tools__grid {
     grid-template-columns: 1fr;
