@@ -45,3 +45,40 @@ const initHeroQuotes = async () => {
 };
 
 initHeroQuotes();
+
+const HEALTH_TIPS_PATH = "/assets/health_tips.json";
+const dailyTipTextElement = document.querySelector(".daily-health-tip__tip");
+const dailyTipDateElement = document.querySelector(".daily-health-tip__date");
+
+const initDailyHealthTip = async () => {
+  if (!dailyTipTextElement || !dailyTipDateElement) return;
+
+  const today = new Date();
+
+  try {
+    dailyTipDateElement.setAttribute(
+      "datetime",
+      today.toISOString().split("T")[0]
+    );
+
+    dailyTipDateElement.textContent = today.toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+  } catch (_) {}
+
+  try {
+    const response = await fetch(HEALTH_TIPS_PATH);
+    if (!response.ok) return;
+
+    const tips = await response.json();
+
+    const dayNumber = Math.floor(today.getTime() / 86400000);
+    const tip = tips[dayNumber % tips.length];
+
+    dailyTipTextElement.textContent = tip;
+  } catch (_) {}
+};
+
+initDailyHealthTip();
