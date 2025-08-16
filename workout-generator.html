@@ -3,13 +3,149 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GreenBite | Workout Generator</title>
 
     <link rel="stylesheet" href="./vendors/normalize.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <h1>Workout Generator</h1>
+  <body class="page--inner">
+    <header class="header__header header__header--always-solid">
+      <div class="header__container">
+        <div>
+          <div class="header__logo">
+            <a href="/"><span class="logo__accent">Green</span>Bite</a>
+          </div>
+        </div>
+        <div class="header__nav">
+          <ul>
+            <li>
+              <a href="/recipes.html">Recipes</a>
+            </li>
+            <li class="header__nav-item--dropdown">
+              <a href="#" class="header__nav-link--dropdown">Tools</a>
+              <ul class="header__dropdown">
+                <li>
+                  <a href="/nutrition-calculators.html"
+                    >Nutrition Calculators</a
+                  >
+                </li>
+                <li>
+                  <a href="/workout-generator.html">Workout Generator</a>
+                </li>
+                <li>
+                  <a href="/mindfulness-activity.html">Mindfulness Activity</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="header__nav-cta">
+            <a href="/contact.html">Contact Us</a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <h1>Workout Generator</h1>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <section class="footer__links" aria-labelledby="footer-links-heading">
+          <h2 id="footer-links-heading">Links</h2>
+          <nav class="footer__nav" aria-label="Footer">
+            <ul>
+              <li><a href="/recipes.html">Recipes</a></li>
+              <li>
+                <a href="/nutrition-calculators.html">Nutrition Calculators</a>
+              </li>
+              <li><a href="/workout-generator.html">Workout Generator</a></li>
+              <li>
+                <a href="/mindfulness-activity.html">Mindfulness Activity</a>
+              </li>
+              <li><a href="/contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section class="footer__social" aria-labelledby="footer-social-heading">
+          <h2 id="footer-social-heading">Social Media</h2>
+          <ul class="footer__social-list">
+            <li>
+              <a href="#" aria-label="Instagram">
+                <img
+                  src="https://cdn.simpleicons.org/instagram/111"
+                  alt="Instagram"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Facebook">
+                <img
+                  src="https://cdn.simpleicons.org/facebook/111"
+                  alt="Facebook"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="X">
+                <img
+                  src="https://cdn.simpleicons.org/x/111"
+                  alt="X"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="YouTube">
+                <img
+                  src="https://cdn.simpleicons.org/youtube/111"
+                  alt="YouTube"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section
+          class="footer__subscribe"
+          aria-labelledby="footer-subscribe-heading"
+        >
+          <h2 id="footer-subscribe-heading">Subscribe to Newsletter</h2>
+
+          <form class="footer__form" action="#" method="post" novalidate>
+            <label class="footer__label" for="footer-email" hidden
+              >Email address</label
+            >
+            <input
+              id="footer-email"
+              name="email"
+              type="email"
+              placeholder="joe@doe.com"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <span class="footer__message">Email saved successfully</span>
+        </section>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__brand">
+          <span class="logo__accent">Green</span>Bite
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

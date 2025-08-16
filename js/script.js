@@ -40,19 +40,26 @@ if (newsletterForm) {
 }
 
 const headerEl = document.querySelector(".header__header");
-const HEADER_SOLID_SCROLL_Y = 100;
 
 if (headerEl) {
-  const updateHeaderSolidState = () => {
-    const scrollY = window.scrollY;
-    if (scrollY >= 100) {
+  const alwaysSolid = headerEl.classList.contains(
+    "header__header--always-solid"
+  );
+
+  const updateHeaderClasses = () => {
+    const scrolled = window.scrollY >= 100;
+
+    if (alwaysSolid) {
       headerEl.classList.add("header__header--solid");
-    } else {
-      headerEl.classList.remove("header__header--solid");
+      headerEl.classList.toggle("header__header--elevated", scrolled);
+      return;
     }
+
+    headerEl.classList.toggle("header__header--solid", scrolled);
+    headerEl.classList.toggle("header__header--elevated", scrolled);
   };
 
-  window.addEventListener("scroll", updateHeaderSolidState, { passive: true });
-  window.addEventListener("resize", updateHeaderSolidState);
-  updateHeaderSolidState();
+  window.addEventListener("scroll", updateHeaderClasses, { passive: true });
+  window.addEventListener("resize", updateHeaderClasses);
+  updateHeaderClasses();
 }
