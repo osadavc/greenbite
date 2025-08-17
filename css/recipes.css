@@ -71,6 +71,9 @@
   font-family: var(--font-body);
   padding: 0 1rem;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .recipe-card__body {

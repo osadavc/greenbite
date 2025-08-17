@@ -19,7 +19,7 @@ const render = (recipes) => {
 
     const recipeMedia = document.createElement("div");
     recipeMedia.className = "recipe-card__media";
-    recipeMedia.textContent = r.imagePath || "Image";
+    recipeMedia.style.backgroundImage = `url(${r.imagePath})`;
     recipeCard.appendChild(recipeMedia);
 
     const recipeBody = document.createElement("div");
