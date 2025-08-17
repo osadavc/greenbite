@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./vendors/normalize.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/recipes.css" />
   </head>
   <body class="page--inner">
     <header class="header__header header__header--always-solid">
@@ -47,14 +48,40 @@
     </header>
 
     <main class="page__main">
-      <h1>Recipes</h1>
+      <section class="recipes">
+        <header class="recipes__header">
+          <h1>Recipes</h1>
+          <p class="recipes__subtitle">
+            Healthy recipes to nourish your body and soul
+          </p>
+        </header>
+
+        <div class="recipes__controls" role="search">
+          <div class="recipes__control">
+            <input
+              class="recipes__search"
+              type="search"
+              placeholder="Search..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="recipes__control">
+            <select class="recipes__select">
+              <option value="all">All</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="recipes__grid"></div>
+        <p class="recipes__empty" hidden>No recipes found.</p>
+      </section>
     </main>
 
     <footer class="footer">
       <div class="footer__container">
-        <section class="footer__links" aria-labelledby="footer-links-heading">
+        <section class="footer__links">
           <h2 id="footer-links-heading">Links</h2>
-          <nav class="footer__nav" aria-label="Footer">
+          <nav class="footer__nav">
             <ul>
               <li><a href="/recipes.html">Recipes</a></li>
               <li>
@@ -69,11 +96,11 @@
           </nav>
         </section>
 
-        <section class="footer__social" aria-labelledby="footer-social-heading">
+        <section class="footer__social">
           <h2 id="footer-social-heading">Social Media</h2>
           <ul class="footer__social-list">
             <li>
-              <a href="#" aria-label="Instagram">
+              <a href="#">
                 <img
                   src="https://cdn.simpleicons.org/instagram/111"
                   alt="Instagram"
@@ -83,7 +110,7 @@
               </a>
             </li>
             <li>
-              <a href="#" aria-label="Facebook">
+              <a href="#">
                 <img
                   src="https://cdn.simpleicons.org/facebook/111"
                   alt="Facebook"
@@ -93,7 +120,7 @@
               </a>
             </li>
             <li>
-              <a href="#" aria-label="X">
+              <a href="#">
                 <img
                   src="https://cdn.simpleicons.org/x/111"
                   alt="X"
@@ -103,7 +130,7 @@
               </a>
             </li>
             <li>
-              <a href="#" aria-label="YouTube">
+              <a href="#">
                 <img
                   src="https://cdn.simpleicons.org/youtube/111"
                   alt="YouTube"
@@ -115,10 +142,7 @@
           </ul>
         </section>
 
-        <section
-          class="footer__subscribe"
-          aria-labelledby="footer-subscribe-heading"
-        >
+        <section class="footer__subscribe">
           <h2 id="footer-subscribe-heading">Subscribe to Newsletter</h2>
 
           <form class="footer__form" action="#" method="post" novalidate>
@@ -147,5 +171,6 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/recipes.js"></script>
   </body>
 </html>
