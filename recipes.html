@@ -77,6 +77,41 @@
       </section>
     </main>
 
+    <div class="recipe-modal" hidden>
+      <div class="recipe-modal__backdrop"></div>
+      <div class="recipe-modal__dialog" role="dialog">
+        <div class="recipe-modal__header">
+          <h2 class="recipe-modal__title"></h2>
+          <button class="recipe-modal__close">×</button>
+        </div>
+
+        <div class="recipe-modal__content">
+          <section class="recipe-modal__section">
+            <h3 class="recipe-modal__heading">Ingredients</h3>
+            <ul class="recipe-modal__ingredients"></ul>
+          </section>
+
+          <section class="recipe-modal__section">
+            <h3 class="recipe-modal__heading">Steps</h3>
+            <ol class="recipe-modal__steps"></ol>
+          </section>
+
+          <section class="recipe-modal__section">
+            <h3 class="recipe-modal__heading">Nutrition</h3>
+            <table class="recipe-modal__nutrition">
+              <thead>
+                <tr>
+                  <th>Nutrient</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody class="recipe-modal__nutrition-body"></tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="footer__container">
         <section class="footer__links">

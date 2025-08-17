@@ -61,6 +61,7 @@
   overflow: hidden;
   display: grid;
   grid-template-rows: 180px auto;
+  cursor: pointer;
 }
 
 .recipe-card__media {
@@ -113,6 +114,81 @@
   .recipes__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.recipe-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+
+.recipe-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.recipe-modal__dialog {
+  position: relative;
+  margin: 4rem auto;
+  max-width: 860px;
+  width: calc(100% - 2rem);
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 2rem;
+}
+
+.recipe-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem 0;
+
+  margin-bottom: 1.25rem;
+}
+
+.recipe-modal__close {
+  background: transparent;
+  border: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.recipe-modal__section + .recipe-modal__section {
+  margin-top: 1.25rem;
+}
+
+.recipe-modal__ingredients {
+  list-style: disc;
+}
+
+.recipe-modal__ingredients,
+.recipe-modal__steps {
+  padding-left: 1.25rem;
+}
+
+.recipe-modal__nutrition {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.25rem;
+}
+
+.recipe-modal__nutrition th,
+.recipe-modal__nutrition td {
+  border: 1px solid #e6e6e6;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.recipe-modal__nutrition thead th {
+  background: #f6f6f6;
+}
+
+.recipe-modal__content {
+  line-height: 1.55;
 }
 
 @media (max-width: 640px) {

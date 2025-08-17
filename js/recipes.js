@@ -3,7 +3,47 @@ const recipeEmptyElement = document.querySelector(".recipes__empty");
 const recipeSearchInput = document.querySelector(".recipes__search");
 const recipeCategorySelect = document.querySelector(".recipes__select");
 
+const recipeModal = document.querySelector(".recipe-modal");
+const recipeModalBackdrop = document.querySelector(".recipe-modal__backdrop");
+const recipeModalClose = document.querySelector(".recipe-modal__close");
+const recipeModalTitle = document.querySelector(".recipe-modal__title");
+const recipeModalIngredients = document.querySelector(
+  ".recipe-modal__ingredients"
+);
+const recipeModalSteps = document.querySelector(".recipe-modal__steps");
+const recipeModalNutritionBody = document.querySelector(
+  ".recipe-modal__nutrition-body"
+);
+
 let allRecipes = [];
+
+const closeModal = () => {
+  if (!recipeModal) return;
+  recipeModal.hidden = true;
+  document.body.style.overflow = "";
+};
+
+const openModal = (recipe) => {
+  if (!recipeModal) return;
+
+  recipeModalTitle.textContent = recipe.title;
+
+  recipeModalIngredients.innerHTML = recipe.ingredients
+    .map((item) => `<li>${item}</li>`)
+    .join("");
+
+  recipeModalSteps.innerHTML = recipe.steps
+    .map((step) => `<li>${step}</li>`)
+    .join("");
+
+  const rows = recipe?.nutrition?.rows || [];
+  recipeModalNutritionBody.innerHTML = rows
+    .map((row) => `<tr><td>${row.nutrient}</td><td>${row.amount}</td></tr>`)
+    .join("");
+
+  recipeModal.hidden = false;
+  document.body.style.overflow = "hidden";
+};
 
 const render = (recipes) => {
   recipeGrid.innerHTML = "";
@@ -40,6 +80,8 @@ const render = (recipes) => {
     recipeDescription.textContent = r.description.slice(0, 100) + "...";
     recipeBody.appendChild(recipeDescription);
     recipeCard.appendChild(recipeBody);
+
+    recipeCard.addEventListener("click", () => openModal(r));
 
     recipeGrid.appendChild(recipeCard);
   });
@@ -79,6 +121,14 @@ const init = async () => {
 
     recipeSearchInput.addEventListener("input", applyFilters);
     recipeCategorySelect.addEventListener("change", applyFilters);
+
+    if (recipeModal) {
+      recipeModalBackdrop.addEventListener("click", closeModal);
+      recipeModalClose.addEventListener("click", closeModal);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !recipeModal.hidden) closeModal();
+      });
+    }
   } catch (err) {
     console.error("Failed to load recipes:", err);
     recipeEmptyElement.hidden = false;
