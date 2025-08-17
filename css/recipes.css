@@ -138,6 +138,9 @@
   border-radius: 0.5rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   padding: 1.5rem 2rem;
+  max-height: calc(100vh - 8rem);
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 .recipe-modal__header {

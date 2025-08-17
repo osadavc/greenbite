@@ -20,6 +20,11 @@ html {
   scrollbar-gutter: stable;
 }
 
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden;
+}
+
 @supports not (scrollbar-gutter: stable) {
   html {
     overflow-y: scroll;

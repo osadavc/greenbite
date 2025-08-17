@@ -20,7 +20,8 @@ let allRecipes = [];
 const closeModal = () => {
   if (!recipeModal) return;
   recipeModal.hidden = true;
-  document.body.style.overflow = "";
+  document.documentElement.classList.remove("no-scroll");
+  document.body.classList.remove("no-scroll");
 };
 
 const openModal = (recipe) => {
@@ -42,7 +43,8 @@ const openModal = (recipe) => {
     .join("");
 
   recipeModal.hidden = false;
-  document.body.style.overflow = "hidden";
+  document.documentElement.classList.add("no-scroll");
+  document.body.classList.add("no-scroll");
 };
 
 const render = (recipes) => {
