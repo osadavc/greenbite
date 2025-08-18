@@ -178,6 +178,44 @@
   display: block;
 }
 
+.feedback-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+}
+
+.feedback-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.feedback-modal__dialog {
+  position: relative;
+  margin: 4rem auto;
+  max-width: 560px;
+  width: calc(100% - 2rem);
+  background: #fff;
+  border-radius: var(--radius-m);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 1.25rem 1.5rem;
+}
+
+.feedback-modal__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.feedback-modal__close {
+  font-size: 1.5rem;
+}
+
+.feedback-modal__content {
+  line-height: 1.55;
+}
+
 @media (max-width: 920px) {
   .contact__content {
     grid-template-columns: 1fr;
