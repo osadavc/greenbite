@@ -2,7 +2,7 @@
   {
     "title": "Chickpea Curry",
     "category": "Dinner",
-    "imagePath": "/assets/images/recipes/chickpea-curry-plated.jpg",
+    "imagePath": "/assets/images/recipes/chickpea-curry-plated.webp",
     "ingredients": [
       "1 tablespoon olive oil",
       "1 medium onion, chopped",
@@ -74,7 +74,7 @@
   {
     "title": "Shrimp Tacos with Mango Salsa",
     "category": "Lunch",
-    "imagePath": "/assets/images/recipes/shrimp-tacos-with-mango-salsa-plated.jpg",
+    "imagePath": "/assets/images/recipes/shrimp-tacos-with-mango-salsa-plated.webp",
     "ingredients": [
       "1 lb shrimp, peeled and deveined",
       "2 tbsp olive oil",
@@ -141,7 +141,7 @@
   {
     "title": "Vegetable Stir-Fry with Tofu",
     "category": "Dinner",
-    "imagePath": "/assets/images/recipes/vegetable-stir-fry-with-tofu-plated.jpg",
+    "imagePath": "/assets/images/recipes/vegetable-stir-fry-with-tofu-plated.webp",
     "ingredients": [
       "14 oz firm tofu",
       "2 tbsp soy sauce",
@@ -347,7 +347,7 @@
   {
     "title": "Lentil Soup with Spinach",
     "category": "Soup",
-    "imagePath": "/assets/images/recipes/lentil-soup-with-spinach-plated.jpg",
+    "imagePath": "/assets/images/recipes/lentil-soup-with-spinach-plated.webp",
     "ingredients": [
       "1 cup lentils, rinsed",
       "4 cups vegetable broth",
@@ -417,7 +417,7 @@
   {
     "title": "Stuffed Bell Peppers",
     "category": "Dinner",
-    "imagePath": "/assets/images/recipes/stuffed-bell-peppers-plated.jpg",
+    "imagePath": "/assets/images/recipes/stuffed-bell-peppers-plated.webp",
     "ingredients": [
       "4 medium bell peppers",
       "1 cup cooked rice",
@@ -486,7 +486,7 @@
   {
     "title": "Chia Seed Pudding with Berries",
     "category": "Dessert",
-    "imagePath": "/assets/images/recipes/chia-seed-pudding-with-berries-plated.jpg",
+    "imagePath": "/assets/images/recipes/chia-seed-pudding-with-berries-plated.webp",
     "ingredients": [
       "1/4 cup chia seeds",
       "1 cup almond milk",
@@ -545,7 +545,7 @@
   {
     "title": "Pita Bread with Hummus and Veggies",
     "category": "Snack",
-    "imagePath": "/assets/images/recipes/pita-bread-with-hummus-and-veggies-plated.jpg",
+    "imagePath": "/assets/images/recipes/pita-bread-with-hummus-and-veggies-plated.webp",
     "ingredients": [
       "2 whole wheat pita breads",
       "1 cup hummus",
@@ -682,7 +682,7 @@
   {
     "title": "Savory Oatmeal with Egg and Avocado",
     "category": "Breakfast",
-    "imagePath": "/assets/images/recipes/savory-oatmeal-with-egg-and-avocado-plated.jpg",
+    "imagePath": "/assets/images/recipes/savory-oatmeal-with-egg-and-avocado-plated.webp",
     "ingredients": [
       "1 cup rolled oats",
       "2 cups water or vegetable broth",
@@ -748,7 +748,7 @@
   {
     "title": "Vegetable Sushi Rolls",
     "category": "Lunch",
-    "imagePath": "/assets/images/recipes/vegetable-sushi-rolls-plated.jpg",
+    "imagePath": "/assets/images/recipes/vegetable-sushi-rolls-plated.webp",
     "ingredients": [
       "2 cups sushi rice",
       "2 1/2 cups water",
@@ -820,7 +820,7 @@
   {
     "title": "Grilled Salmon with Asparagus",
     "category": "Dinner",
-    "imagePath": "/assets/images/recipes/grilled-salmon-with-asparagus-plated.jpeg",
+    "imagePath": "/assets/images/recipes/grilled-salmon-with-asparagus-plated.webp",
     "ingredients": [
       "4 oz salmon fillet",
       "1 tbsp olive oil",
@@ -886,7 +886,7 @@
   {
     "title": "Caprese Salad with Balsamic Glaze",
     "category": "Salad",
-    "imagePath": "/assets/images/recipes/caprese-salad-with-balsamic-glaze-plated.jpg",
+    "imagePath": "/assets/images/recipes/caprese-salad-with-balsamic-glaze-plated.webp",
     "ingredients": [
       "2 large ripe tomatoes",
       "8 ounces fresh mozzarella cheese",
@@ -949,7 +949,7 @@
   {
     "title": "Thai Coconut Soup",
     "category": "Soup",
-    "imagePath": "/assets/images/recipes/thai-coconut-soup-plated.jpg",
+    "imagePath": "/assets/images/recipes/thai-coconut-soup-plated.webp",
     "ingredients": [
       "1 tablespoon vegetable oil",
       "1 medium onion, chopped",
@@ -1020,7 +1020,7 @@
   {
     "title": "Pasta Primavera",
     "category": "Pasta",
-    "imagePath": "/assets/images/recipes/pasta-primavera-plated.jpg",
+    "imagePath": "/assets/images/recipes/pasta-primavera-plated.webp",
     "ingredients": [
       "8 oz pasta",
       "2 tbsp olive oil",
@@ -1155,7 +1155,7 @@
   {
     "title": "Banana Pancakes with Maple Syrup",
     "category": "Breakfast",
-    "imagePath": "/assets/images/recipes/banana-pancakes-with-maple-syrup-plated.jpg",
+    "imagePath": "/assets/images/recipes/banana-pancakes-with-maple-syrup-plated.webp",
     "ingredients": [
       "1 cup all-purpose flour",
       "2 tbsp sugar",
@@ -1221,7 +1221,7 @@
   {
     "title": "Falafel Wrap with Tahini Sauce",
     "category": "Lunch",
-    "imagePath": "/assets/images/recipes/falafel-wrap-with-tahini-sauce-plated.jpg",
+    "imagePath": "/assets/images/recipes/falafel-wrap-with-tahini-sauce-plated.webp",
     "ingredients": [
       "1 cup dried chickpeas",
       "1/2 small onion, chopped",
@@ -1297,7 +1297,7 @@
   {
     "title": "Baked Sweet Potatoes with Black Beans",
     "category": "Dinner",
-    "imagePath": "/assets/images/recipes/baked-sweet-potatoes-with-black-beans-plated.jpg",
+    "imagePath": "/assets/images/recipes/baked-sweet-potatoes-with-black-beans-plated.webp",
     "ingredients": [
       "4 medium sweet potatoes",
       "1 can (15 oz) black beans, drained and rinsed",

@@ -15,7 +15,7 @@
       rgba(255, 255, 255, 0.9) 85%,
       rgba(255, 255, 255, 1) 100%
     ),
-    url("../assets/images/home/hero_background.png");
+    url("../assets/images/home/hero_background.webp");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
