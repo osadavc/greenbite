@@ -63,3 +63,27 @@ if (headerEl) {
   window.addEventListener("resize", updateHeaderClasses);
   updateHeaderClasses();
 }
+
+const hamburgerButton = document.querySelector(".header__hamburger");
+const mobileOverlay = document.querySelector(".header__mobile-overlay");
+const mobileDrawer = document.querySelector(".header__mobile-drawer");
+const mobileCloseButton = document.querySelector(".header__mobile-close");
+
+const setMobileOpen = (isOpen) => {
+  headerEl.classList.toggle("header__header--mobile-open", isOpen);
+  document.documentElement.classList.toggle("no-scroll", isOpen);
+  document.body.classList.toggle("no-scroll", isOpen);
+  document.body.classList.toggle("is-mobile-menu-open", isOpen);
+};
+
+hamburgerButton.addEventListener("click", () => setMobileOpen(true));
+mobileCloseButton?.addEventListener("click", () => setMobileOpen(false));
+mobileOverlay.addEventListener("click", () => setMobileOpen(false));
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") setMobileOpen(false);
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 900) setMobileOpen(false);
+});

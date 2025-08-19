@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="./css/contact.css" />
   </head>
   <body class="page--inner">
-    <header class="header__header header__header--always-solid">
+    <header
+      class="header__header header__header--always-solid header__header--mobile-enabled"
+    >
       <div class="header__container">
         <div>
           <div class="header__logo">
@@ -49,8 +51,64 @@
             <a href="/contact.html">Contact Us</a>
           </button>
         </div>
+        <button class="header__hamburger" type="button">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6h16M4 12h16M4 18h16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
       </div>
     </header>
+
+    <div class="header__mobile-overlay"></div>
+    <aside class="header__mobile-drawer">
+      <div class="header__mobile-header">
+        <div class="header__mobile-title">
+          <span class="logo__accent">Green</span>Bite
+        </div>
+        <button class="header__mobile-close" type="button">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 6l12 12M18 6L6 18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <nav class="header__mobile-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/recipes.html">Recipes</a></li>
+          <li class="header__mobile-section-title">Tools</li>
+          <li>
+            <a href="/nutrition-calculators.html">Nutrition Calculators</a>
+          </li>
+          <li><a href="/workout-generator.html">Workout Generator</a></li>
+          <li><a href="/mindfulness-activity.html">Mindfulness Activity</a></li>
+          <li>
+            <a class="header__mobile-cta" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
     <main class="page__main">
       <section class="contact__intro">
