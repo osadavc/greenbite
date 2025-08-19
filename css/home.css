@@ -257,3 +257,17 @@
     height: 260px;
   }
 }
+
+@media (max-width: 900px) {
+  .hero__container {
+    padding: 0 1rem;
+  }
+
+  .tools__container {
+    padding: 4rem 1rem;
+  }
+
+  .daily-health-tip__container {
+    padding: 2rem 1rem;
+  }
+}
