@@ -43,8 +43,8 @@
 
 .recipes__search:focus,
 .recipes__select:focus {
-  outline: 1.5px solid var(--color-primary);
-  outline-offset: 0;
+  outline: 1px solid var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .recipes__grid {
