@@ -1,0 +1,217 @@
+.workout__intro {
+  max-width: var(--max-width);
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.workout__intro h1 {
+  font-family: var(--font-primary);
+  margin-bottom: 0.25rem;
+}
+
+.workout__intro p {
+  color: #444;
+  margin: 0;
+}
+
+.workout__content {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.workout__form-section {
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: var(--radius-l);
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.workout__form-header h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-primary);
+}
+
+.workout__form-header p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.workout__form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form__field select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  border-radius: var(--radius-l);
+  background: #fff;
+  appearance: none;
+  padding-right: 2.5rem;
+
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9l6 6 6-6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  background-size: 12px 12px;
+}
+
+.form__field select:focus {
+  outline: 1px solid var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.form__actions {
+  margin-top: 0.5rem;
+}
+
+.button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-l);
+}
+
+.button--primary {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius-pill);
+  padding: 0.65rem 1.5rem;
+  width: 100%;
+}
+
+.button--outline {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.workout__results {
+  border: 1px solid #eee;
+  border-radius: var(--radius-l);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.results__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results__title {
+  font-weight: 600;
+  font-family: var(--font-primary);
+  color: #333;
+}
+
+.results__badge {
+  display: inline-block;
+  background: #f1f3f5;
+  color: #333;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  min-width: 64px;
+  text-align: center;
+}
+
+.timer {
+  margin-top: 1rem;
+}
+
+.timer__display {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+
+.timer__current h3 {
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.timer__exercise-desc {
+  color: #666;
+}
+
+.timer__controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.timer__button {
+  min-width: 100px;
+}
+
+.exercise__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.exercise__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-l);
+  background: #f8f9fa;
+}
+
+.exercise__item--active {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.exercise__meta {
+  display: inline-block;
+  background: #eef2f7;
+  color: #333;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  min-width: 56px;
+  text-align: center;
+}
+
+.timer__subtext {
+  margin-top: 0.75rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .workout__form-section,
+  .workout__results {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+}

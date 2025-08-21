@@ -1,0 +1,667 @@
+{
+  "arms": {
+    "none": {
+      "name": "Bodyweight Arms Workout",
+      "exercises": [
+        {
+          "name": "Push-ups",
+          "duration": 45,
+          "description": "Standard push-ups, keep body straight"
+        },
+        {
+          "name": "Tricep Dips",
+          "duration": 30,
+          "description": "Use a chair or bench, lower body slowly"
+        },
+        {
+          "name": "Pike Push-ups",
+          "duration": 30,
+          "description": "Target shoulders, form an inverted V"
+        },
+        {
+          "name": "Arm Circles",
+          "duration": 20,
+          "description": "Small circles forward, then backward"
+        }
+      ],
+      "totalTime": 125
+    },
+    "dumbbells": {
+      "name": "Dumbbell Arms Workout",
+      "exercises": [
+        {
+          "name": "Bicep Curls",
+          "duration": 45,
+          "description": "Controlled movement, squeeze at the top"
+        },
+        {
+          "name": "Overhead Press",
+          "duration": 45,
+          "description": "Press dumbbells overhead, keep core tight"
+        },
+        {
+          "name": "Tricep Extensions",
+          "duration": 30,
+          "description": "Lower weight behind head slowly"
+        },
+        {
+          "name": "Hammer Curls",
+          "duration": 30,
+          "description": "Neutral grip, alternate arms"
+        }
+      ],
+      "totalTime": 150
+    },
+    "resistance-bands": {
+      "name": "Resistance Band Arms",
+      "exercises": [
+        {
+          "name": "Band Bicep Curls",
+          "duration": 45,
+          "description": "Step on band, curl handles up"
+        },
+        {
+          "name": "Band Overhead Press",
+          "duration": 40,
+          "description": "Press band overhead from shoulders"
+        },
+        {
+          "name": "Band Tricep Extensions",
+          "duration": 35,
+          "description": "Hold band overhead, extend down"
+        },
+        {
+          "name": "Band Lateral Raises",
+          "duration": 30,
+          "description": "Raise arms to sides against resistance"
+        }
+      ],
+      "totalTime": 150
+    },
+    "kettlebells": {
+      "name": "Kettlebell Arms Workout",
+      "exercises": [
+        {
+          "name": "Kettlebell Swings",
+          "duration": 45,
+          "description": "Hip hinge movement, swing to shoulder height"
+        },
+        {
+          "name": "Kettlebell Press",
+          "duration": 40,
+          "description": "Press kettlebell overhead, one arm at a time"
+        },
+        {
+          "name": "Kettlebell Rows",
+          "duration": 35,
+          "description": "Bent over row, pull to ribs"
+        },
+        {
+          "name": "Kettlebell Halos",
+          "duration": 30,
+          "description": "Circle kettlebell around your head"
+        }
+      ],
+      "totalTime": 150
+    },
+    "barbell": {
+      "name": "Barbell Arms Workout",
+      "exercises": [
+        {
+          "name": "Barbell Curls",
+          "duration": 45,
+          "description": "Stand tall, curl bar to chest"
+        },
+        {
+          "name": "Overhead Press",
+          "duration": 45,
+          "description": "Press barbell overhead from shoulders"
+        },
+        {
+          "name": "Close-Grip Bench Press",
+          "duration": 40,
+          "description": "Narrow grip, focus on triceps"
+        },
+        {
+          "name": "Barbell Rows",
+          "duration": 35,
+          "description": "Bent over, pull bar to lower chest"
+        }
+      ],
+      "totalTime": 165
+    }
+  },
+  "legs": {
+    "none": {
+      "name": "Bodyweight Legs Workout",
+      "exercises": [
+        {
+          "name": "Squats",
+          "duration": 45,
+          "description": "Feet shoulder-width apart, sit back"
+        },
+        {
+          "name": "Lunges",
+          "duration": 40,
+          "description": "Alternate legs, keep front knee over ankle"
+        },
+        {
+          "name": "Calf Raises",
+          "duration": 30,
+          "description": "Rise up on toes, slow descent"
+        },
+        {
+          "name": "Wall Sit",
+          "duration": 30,
+          "description": "Back against wall, thighs parallel to floor"
+        }
+      ],
+      "totalTime": 145
+    },
+    "dumbbells": {
+      "name": "Dumbbell Legs Workout",
+      "exercises": [
+        {
+          "name": "Goblet Squats",
+          "duration": 45,
+          "description": "Hold dumbbell at chest, squat deep"
+        },
+        {
+          "name": "Dumbbell Lunges",
+          "duration": 45,
+          "description": "Hold dumbbells at sides, lunge forward"
+        },
+        {
+          "name": "Romanian Deadlifts",
+          "duration": 40,
+          "description": "Hinge at hips, lower dumbbells"
+        },
+        {
+          "name": "Calf Raises",
+          "duration": 30,
+          "description": "Hold dumbbells, rise on toes"
+        }
+      ],
+      "totalTime": 160
+    },
+    "resistance-bands": {
+      "name": "Resistance Band Legs",
+      "exercises": [
+        {
+          "name": "Band Squats",
+          "duration": 45,
+          "description": "Stand on band, squat with resistance"
+        },
+        {
+          "name": "Band Side Steps",
+          "duration": 40,
+          "description": "Band around ankles, step sideways"
+        },
+        {
+          "name": "Band Glute Bridges",
+          "duration": 35,
+          "description": "Band around thighs, bridge up"
+        },
+        {
+          "name": "Band Leg Press",
+          "duration": 30,
+          "description": "Lying down, press band with feet"
+        }
+      ],
+      "totalTime": 150
+    },
+    "kettlebells": {
+      "name": "Kettlebell Legs Workout",
+      "exercises": [
+        {
+          "name": "Kettlebell Squats",
+          "duration": 45,
+          "description": "Hold kettlebell at chest, squat"
+        },
+        {
+          "name": "Kettlebell Deadlifts",
+          "duration": 45,
+          "description": "Hinge at hips, lower kettlebell"
+        },
+        {
+          "name": "Kettlebell Lunges",
+          "duration": 40,
+          "description": "Hold kettlebell, alternate lunges"
+        },
+        {
+          "name": "Single-Leg Deadlifts",
+          "duration": 35,
+          "description": "Balance on one leg, hinge forward"
+        }
+      ],
+      "totalTime": 165
+    },
+    "barbell": {
+      "name": "Barbell Legs Workout",
+      "exercises": [
+        {
+          "name": "Back Squats",
+          "duration": 60,
+          "description": "Bar on shoulders, squat deep"
+        },
+        {
+          "name": "Romanian Deadlifts",
+          "duration": 50,
+          "description": "Hinge at hips, lower bar"
+        },
+        {
+          "name": "Walking Lunges",
+          "duration": 45,
+          "description": "Hold bar on shoulders, lunge forward"
+        },
+        {
+          "name": "Calf Raises",
+          "duration": 30,
+          "description": "Bar on shoulders, rise on toes"
+        }
+      ],
+      "totalTime": 185
+    }
+  },
+  "chest": {
+    "none": {
+      "name": "Bodyweight Chest Workout",
+      "exercises": [
+        {
+          "name": "Push-ups",
+          "duration": 45,
+          "description": "Standard push-ups, full range of motion"
+        },
+        {
+          "name": "Wide Push-ups",
+          "duration": 40,
+          "description": "Hands wider than shoulders"
+        },
+        {
+          "name": "Diamond Push-ups",
+          "duration": 30,
+          "description": "Hands form diamond shape"
+        },
+        {
+          "name": "Incline Push-ups",
+          "duration": 35,
+          "description": "Hands elevated on bench or step"
+        }
+      ],
+      "totalTime": 150
+    },
+    "dumbbells": {
+      "name": "Dumbbell Chest Workout",
+      "exercises": [
+        {
+          "name": "Dumbbell Press",
+          "duration": 50,
+          "description": "Lying flat, press dumbbells up"
+        },
+        {
+          "name": "Dumbbell Flyes",
+          "duration": 45,
+          "description": "Arms wide, bring dumbbells together"
+        },
+        {
+          "name": "Incline Dumbbell Press",
+          "duration": 45,
+          "description": "On incline, press dumbbells up"
+        },
+        {
+          "name": "Pullovers",
+          "duration": 35,
+          "description": "Lower dumbbell behind head"
+        }
+      ],
+      "totalTime": 175
+    },
+    "resistance-bands": {
+      "name": "Resistance Band Chest",
+      "exercises": [
+        {
+          "name": "Band Chest Press",
+          "duration": 45,
+          "description": "Anchor band behind, press forward"
+        },
+        {
+          "name": "Band Flyes",
+          "duration": 40,
+          "description": "Arms wide, bring handles together"
+        },
+        {
+          "name": "Band Push-ups",
+          "duration": 35,
+          "description": "Band across back, push-ups with resistance"
+        },
+        {
+          "name": "Band Crossovers",
+          "duration": 30,
+          "description": "Cross arms in front of chest"
+        }
+      ],
+      "totalTime": 150
+    },
+    "kettlebells": {
+      "name": "Kettlebell Chest Workout",
+      "exercises": [
+        {
+          "name": "Kettlebell Press",
+          "duration": 45,
+          "description": "Lying down, press kettlebells up"
+        },
+        {
+          "name": "Kettlebell Flyes",
+          "duration": 40,
+          "description": "Wide arc motion with kettlebells"
+        },
+        {
+          "name": "Floor Press",
+          "duration": 40,
+          "description": "Press from floor, limited range"
+        },
+        {
+          "name": "Kettlebell Pullovers",
+          "duration": 35,
+          "description": "Lower kettlebell behind head"
+        }
+      ],
+      "totalTime": 160
+    },
+    "barbell": {
+      "name": "Barbell Chest Workout",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "duration": 60,
+          "description": "Lower bar to chest, press up"
+        },
+        {
+          "name": "Incline Bench Press",
+          "duration": 50,
+          "description": "On incline, press barbell up"
+        },
+        {
+          "name": "Close-Grip Bench Press",
+          "duration": 45,
+          "description": "Narrow grip, focus on triceps"
+        },
+        {
+          "name": "Barbell Pullovers",
+          "duration": 35,
+          "description": "Lower bar behind head"
+        }
+      ],
+      "totalTime": 190
+    }
+  },
+  "core": {
+    "none": {
+      "name": "Bodyweight Core Workout",
+      "exercises": [
+        {
+          "name": "Plank",
+          "duration": 45,
+          "description": "Hold straight line from head to heels"
+        },
+        {
+          "name": "Bicycle Crunches",
+          "duration": 40,
+          "description": "Alternate elbow to opposite knee"
+        },
+        {
+          "name": "Russian Twists",
+          "duration": 35,
+          "description": "Sit up, twist side to side"
+        },
+        {
+          "name": "Mountain Climbers",
+          "duration": 30,
+          "description": "Plank position, alternate knees"
+        }
+      ],
+      "totalTime": 150
+    },
+    "dumbbells": {
+      "name": "Dumbbell Core Workout",
+      "exercises": [
+        {
+          "name": "Weighted Crunches",
+          "duration": 45,
+          "description": "Hold dumbbell at chest, crunch up"
+        },
+        {
+          "name": "Russian Twists",
+          "duration": 40,
+          "description": "Hold dumbbell, twist side to side"
+        },
+        {
+          "name": "Weighted Plank",
+          "duration": 35,
+          "description": "Plank with dumbbell on back"
+        },
+        {
+          "name": "Dumbbell Deadbugs",
+          "duration": 30,
+          "description": "Lying down, opposite arm and leg"
+        }
+      ],
+      "totalTime": 150
+    },
+    "resistance-bands": {
+      "name": "Band Core Workout",
+      "exercises": [
+        {
+          "name": "Band Crunches",
+          "duration": 45,
+          "description": "Anchor band overhead, crunch down"
+        },
+        {
+          "name": "Band Woodchoppers",
+          "duration": 40,
+          "description": "Diagonal pulling motion"
+        },
+        {
+          "name": "Band Pallof Press",
+          "duration": 35,
+          "description": "Hold band at chest, press out"
+        },
+        {
+          "name": "Band Bicycle",
+          "duration": 30,
+          "description": "Band around feet, bicycle motion"
+        }
+      ],
+      "totalTime": 150
+    },
+    "kettlebells": {
+      "name": "Kettlebell Core Workout",
+      "exercises": [
+        {
+          "name": "Kettlebell Swings",
+          "duration": 45,
+          "description": "Hip hinge, swing to shoulder height"
+        },
+        {
+          "name": "Turkish Get-ups",
+          "duration": 40,
+          "description": "Complex movement from lying to standing"
+        },
+        {
+          "name": "Kettlebell Windmills",
+          "duration": 35,
+          "description": "Overhead hold, bend to side"
+        },
+        {
+          "name": "Kettlebell Sit-ups",
+          "duration": 30,
+          "description": "Hold kettlebell, sit up"
+        }
+      ],
+      "totalTime": 150
+    },
+    "barbell": {
+      "name": "Barbell Core Workout",
+      "exercises": [
+        {
+          "name": "Barbell Rollouts",
+          "duration": 45,
+          "description": "Roll bar forward, engage core"
+        },
+        {
+          "name": "Barbell Russian Twists",
+          "duration": 40,
+          "description": "Sit up, twist bar side to side"
+        },
+        {
+          "name": "Barbell Sit-ups",
+          "duration": 35,
+          "description": "Hold bar at chest, sit up"
+        },
+        {
+          "name": "Barbell Landmines",
+          "duration": 30,
+          "description": "Pivot bar in arc motion"
+        }
+      ],
+      "totalTime": 150
+    }
+  },
+  "fullbody": {
+    "none": {
+      "name": "Full Body HIIT",
+      "exercises": [
+        {
+          "name": "Burpees",
+          "duration": 30,
+          "description": "Full body movement, jump at the top"
+        },
+        {
+          "name": "Mountain Climbers",
+          "duration": 30,
+          "description": "Keep hips level, quick feet"
+        },
+        {
+          "name": "Jumping Jacks",
+          "duration": 30,
+          "description": "Full range of motion, land softly"
+        },
+        {
+          "name": "High Knees",
+          "duration": 30,
+          "description": "Bring knees to chest level"
+        },
+        {
+          "name": "Plank",
+          "duration": 30,
+          "description": "Hold straight line from head to heels"
+        }
+      ],
+      "totalTime": 150
+    },
+    "dumbbells": {
+      "name": "Dumbbell Full Body",
+      "exercises": [
+        {
+          "name": "Dumbbell Thrusters",
+          "duration": 45,
+          "description": "Squat to overhead press"
+        },
+        {
+          "name": "Renegade Rows",
+          "duration": 40,
+          "description": "Plank position, alternate rows"
+        },
+        {
+          "name": "Dumbbell Burpees",
+          "duration": 35,
+          "description": "Burpee holding dumbbells"
+        },
+        {
+          "name": "Man Makers",
+          "duration": 40,
+          "description": "Burpee with row and press"
+        }
+      ],
+      "totalTime": 160
+    },
+    "resistance-bands": {
+      "name": "Band Full Body Circuit",
+      "exercises": [
+        {
+          "name": "Band Squats to Press",
+          "duration": 45,
+          "description": "Squat then press band overhead"
+        },
+        {
+          "name": "Band Rows to Reverse Fly",
+          "duration": 40,
+          "description": "Row then open arms wide"
+        },
+        {
+          "name": "Band Lateral Walks",
+          "duration": 35,
+          "description": "Side steps with band resistance"
+        },
+        {
+          "name": "Band Mountain Climbers",
+          "duration": 30,
+          "description": "Band around feet, mountain climbers"
+        }
+      ],
+      "totalTime": 150
+    },
+    "kettlebells": {
+      "name": "Kettlebell Full Body",
+      "exercises": [
+        {
+          "name": "Kettlebell Swings",
+          "duration": 45,
+          "description": "Hip hinge, explosive swing"
+        },
+        {
+          "name": "Kettlebell Clean & Press",
+          "duration": 40,
+          "description": "Clean to shoulder, press overhead"
+        },
+        {
+          "name": "Kettlebell Goblet Squats",
+          "duration": 35,
+          "description": "Hold at chest, squat deep"
+        },
+        {
+          "name": "Turkish Get-ups",
+          "duration": 40,
+          "description": "Complex movement, lying to standing"
+        }
+      ],
+      "totalTime": 160
+    },
+    "barbell": {
+      "name": "Barbell Full Body",
+      "exercises": [
+        {
+          "name": "Barbell Thrusters",
+          "duration": 50,
+          "description": "Front squat to overhead press"
+        },
+        {
+          "name": "Barbell Rows",
+          "duration": 45,
+          "description": "Bent over, pull to lower chest"
+        },
+        {
+          "name": "Deadlifts",
+          "duration": 50,
+          "description": "Hip hinge, lift from floor"
+        },
+        {
+          "name": "Barbell Burpees",
+          "duration": 35,
+          "description": "Burpee over the barbell"
+        }
+      ],
+      "totalTime": 180
+    }
+  }
+}

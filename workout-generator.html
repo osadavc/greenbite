@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./vendors/normalize.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/workout-generator.css" />
   </head>
   <body class="page--inner">
     <header
@@ -105,7 +106,94 @@
     </aside>
 
     <main class="page__main">
-      <h1>Workout Generator</h1>
+      <section class="workout__intro">
+        <h1>Workout Generator</h1>
+        <p>Generate personalized workouts based on your preferences</p>
+      </section>
+
+      <section class="workout__content">
+        <div class="workout__form-section">
+          <div class="workout__form-header">
+            <h2>Workout Preference</h2>
+            <p>
+              Select your target body part and the equipment you want to use
+            </p>
+          </div>
+
+          <form class="workout__form" id="workoutForm">
+            <div class="form__field">
+              <label for="bodypart">Target Body Part</label>
+              <select
+                id="bodypart"
+                name="bodypart"
+                class="workout__select workout__select--bodypart"
+              >
+                <option value="">Select body part</option>
+              </select>
+            </div>
+
+            <div class="form__field">
+              <label for="equipment">Available Equipments</label>
+              <select
+                id="equipment"
+                name="equipment"
+                class="workout__select workout__select--equipment"
+                disabled
+              >
+                <option value="">Select equipment</option>
+              </select>
+            </div>
+
+            <div class="form__actions">
+              <button
+                type="submit"
+                class="button button--primary workout__generate-btn"
+                disabled
+              >
+                Generate Workout Plan
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="workout__results" id="workoutResults" style="display: none">
+          <div class="results__left">
+            <div class="results__header">
+              <h2 class="results__title">Your Workout</h2>
+              <span class="results__badge" id="totalTime">0:00</span>
+            </div>
+
+            <div class="timer">
+              <div class="timer__display" id="timerDisplay">0:00</div>
+              <div class="timer__current">
+                <h3 class="timer__exercise-name" id="currentExerciseName">—</h3>
+                <p class="timer__exercise-desc" id="currentExerciseDesc">—</p>
+              </div>
+              <div class="timer__controls">
+                <button
+                  class="button button--primary timer__button timer__start"
+                  id="startPauseBtn"
+                >
+                  Start
+                </button>
+                <button
+                  class="button button--outline timer__button timer__reset"
+                  id="resetBtn"
+                >
+                  Reset
+                </button>
+              </div>
+              <div class="timer__subtext timer__position" id="exercisePosition">
+                Exercise 0 of 0
+              </div>
+            </div>
+          </div>
+
+          <div class="results__right">
+            <div class="exercise__list" id="exerciseList"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -201,6 +289,8 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/tone@15.1.22/build/Tone.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/workout-generator.js"></script>
   </body>
 </html>
