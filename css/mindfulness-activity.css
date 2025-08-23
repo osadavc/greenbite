@@ -1,0 +1,284 @@
+.mind__intro {
+  max-width: var(--max-width);
+  margin-bottom: 2rem;
+}
+
+.mind__intro h1 {
+  font-family: var(--font-primary);
+  margin-bottom: 0.25rem;
+}
+
+.mind__intro p {
+  color: #444;
+  margin: 0;
+}
+
+.mind__sessions {
+  margin-top: 0.75rem;
+}
+
+.mind__sessions-badge {
+  display: inline-block;
+  background: #eef2f7;
+  color: #333;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+}
+
+.mind__grid {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.mind__card--wide {
+  grid-column: 1 / -1;
+}
+
+.mind__card {
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: var(--radius-l);
+  padding: 2rem;
+}
+.mind__ambient {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+}
+
+.mind__ambient-info h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-primary);
+}
+
+.mind__ambient-info p {
+  color: #666;
+  margin: 0 0 1rem 0;
+}
+
+.mind__card-header h2 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-primary);
+}
+
+.mind__card-header p {
+  color: #666;
+  margin: 0 0 1rem 0;
+}
+
+.mind__card-body {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Buttons (copied from workout page for consistency) */
+.button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-l);
+}
+
+.button--primary {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius-pill);
+}
+
+.button--outline {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Inputs */
+.form__field input,
+.form__field select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  border-radius: var(--radius-l);
+  background: #fff;
+}
+
+.form__field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form__field select {
+  appearance: none;
+  padding-right: 2.5rem;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23111' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M6 9l6 6 6-6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  background-size: 12px 12px;
+}
+
+.form__field input:focus,
+.form__field select:focus {
+  outline: 1px solid var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* Breathing */
+
+.mind__breath-wrap {
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.mind__breath-circle-wrap {
+  padding: 2.3rem 0;
+}
+
+.mind__breath-circle {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(16, 185, 129, 0.25),
+    rgba(16, 185, 129, 0.45)
+  );
+  transform: scale(1);
+  transition: transform 4s ease-in-out;
+}
+
+.mind__breath-instruction {
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.mind__breath-circle.is-breathing--inhale,
+.mind__breath-circle.is-breathing--hold {
+  transform: scale(1.5);
+}
+
+.mind__breath-circle.is-breathing--exhale {
+  transform: scale(1);
+}
+
+.mind__actions {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Timer */
+.mind__timer {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.mind__timer-display {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+
+.mind__timer-status {
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.mind__timer-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+/* Sounds */
+.mind__sound-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.mind__sound-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  height: 4rem;
+  border: 1px solid #ddd;
+  border-radius: var(--radius-l);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.mind__sound-btn.is-active {
+  border-color: rgba(16, 185, 129, 0.45);
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.mind__emoji {
+  font-size: 1.25rem;
+}
+
+.mind__playing {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: var(--radius-l);
+}
+
+.mind__playing .button {
+  margin-top: 0.5rem;
+  min-width: 160px;
+}
+
+.mind__progress {
+  margin-top: 1rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.mind__progress-title {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.mind__progress-count {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.mind__progress-sub {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .mind__grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .mind__ambient {
+    grid-template-columns: 1fr;
+  }
+}

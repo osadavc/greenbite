@@ -87,3 +87,11 @@ document.addEventListener("keydown", (e) => {
 window.addEventListener("resize", () => {
   if (window.innerWidth > 900) setMobileOpen(false);
 });
+
+// common utils
+
+const formatTime = (seconds) => {
+  const mins = Math.floor(seconds / 60);
+  const secs = seconds % 60;
+  return `${mins}:${String(secs).padStart(2, "0")}`;
+};

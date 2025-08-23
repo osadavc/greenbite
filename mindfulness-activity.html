@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./vendors/normalize.css" />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mindfulness-activity.css" />
   </head>
   <body class="page--inner">
     <header
@@ -105,7 +106,125 @@
     </aside>
 
     <main class="page__main">
-      <h1>Mindfulness Activity</h1>
+      <section class="mind__intro">
+        <h1>Mindfulness Activities</h1>
+        <p>
+          Practice breathing exercises, meditation, and find your inner peace
+        </p>
+        <div class="mind__sessions">
+          <span class="mind__sessions-badge"
+            >Completed Sessions:
+            <span class="mind__sessions-count">0</span></span
+          >
+        </div>
+      </section>
+
+      <section class="mind__grid">
+        <div class="mind__card">
+          <header class="mind__card-header">
+            <h2>Guided Breathing</h2>
+            <p>Follow the breathing animation to calm your mind</p>
+          </header>
+          <div class="mind__card-body">
+            <div class="mind__breath-wrap">
+              <div class="mind__breath-circle-wrap">
+                <div class="mind__breath-circle"></div>
+              </div>
+              <div class="mind__breath-instruction">Ready…</div>
+            </div>
+            <div class="mind__actions">
+              <button class="button button--primary mind__breath-toggle">
+                Start Breathing
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mind__card">
+          <header class="mind__card-header">
+            <h2>Meditation Timer</h2>
+            <p>Set a timer for your meditation or focus sessions</p>
+          </header>
+          <div class="mind__card-body">
+            <div class="form__field">
+              <label for="mind-timer-type">Session Type</label>
+              <select id="mind-timer-type" class="mind__timer-type">
+                <option value="meditation">Meditation</option>
+                <option value="pomodoro">Pomodoro (25 min)</option>
+              </select>
+            </div>
+
+            <div class="form__field">
+              <label for="mind-timer-min">Duration (minutes)</label>
+              <input
+                id="mind-timer-min"
+                class="mind__timer-minutes"
+                type="number"
+                inputmode="numeric"
+                value="5"
+                min="1"
+              />
+            </div>
+
+            <div class="timer mind__timer">
+              <div class="mind__timer-display">5:00</div>
+              <div class="mind__timer-status">Ready to start</div>
+            </div>
+
+            <div class="mind__timer-controls">
+              <button class="button button--primary mind__timer-start">
+                Start
+              </button>
+              <button class="button button--outline mind__timer-reset">
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mind__card mind__card--wide">
+          <div class="mind__ambient">
+            <div class="mind__ambient-info">
+              <h2>Ambient Sounds</h2>
+              <p>Choose calming sounds to enhance your practice</p>
+            </div>
+            <div>
+              <div class="mind__sound-grid">
+                <button class="mind__sound-btn" data-sound="Rain">
+                  <span class="mind__emoji">🌧️</span><span>Rain</span>
+                </button>
+                <button class="mind__sound-btn" data-sound="Ocean">
+                  <span class="mind__emoji">🌊</span><span>Ocean</span>
+                </button>
+                <button class="mind__sound-btn" data-sound="Forest">
+                  <span class="mind__emoji">🌲</span><span>Forest</span>
+                </button>
+                <button class="mind__sound-btn" data-sound="Birds">
+                  <span class="mind__emoji">🐦</span><span>Birds</span>
+                </button>
+                <button class="mind__sound-btn" data-sound="Wind">
+                  <span class="mind__emoji">💨</span><span>Wind</span>
+                </button>
+                <button class="mind__sound-btn" data-sound="Fire">
+                  <span class="mind__emoji">🔥</span><span>Fire</span>
+                </button>
+              </div>
+
+              <div class="mind__playing" style="display: none">
+                <div class="mind__playing-row">
+                  <span
+                    >Playing:
+                    <strong class="mind__playing-name">—</strong></span
+                  >
+                </div>
+                <button class="button button--outline mind__stop-sound">
+                  Stop Sound
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -202,5 +321,6 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/mindfulness-activity.js"></script>
   </body>
 </html>

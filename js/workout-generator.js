@@ -25,12 +25,6 @@ const playBeep = () =>
   (Tone.start(),
   new Tone.Synth().toDestination().triggerAttackRelease("C6", "16n"));
 
-const formatSeconds = (seconds) => {
-  const mins = Math.floor(seconds / 60);
-  const secs = seconds % 60;
-  return `${mins}:${String(secs).padStart(2, "0")}`;
-};
-
 fetch("/assets/workout_plans.json")
   .then((r) => r.json())
   .then((data) => {
@@ -99,7 +93,7 @@ const handleGenerate = (bodyKey, equipKey) => {
     totalTime: Number(selected.totalTime),
   };
 
-  totalTimeEl.textContent = formatSeconds(currentPlan.totalTime);
+  totalTimeEl.textContent = formatTime(currentPlan.totalTime);
 
   // making it visible
   resultsContainer.style.display = "grid";
@@ -119,7 +113,7 @@ const tick = () => {
   if (!isActive) return;
   if (timeLeftSeconds > 0) {
     timeLeftSeconds -= 1;
-    timerDisplayEl.textContent = formatSeconds(timeLeftSeconds);
+    timerDisplayEl.textContent = formatTime(timeLeftSeconds);
     return;
   }
 
@@ -172,7 +166,7 @@ const updateExerciseList = () => {
 
     const meta = document.createElement("span");
     meta.className = "exercise__meta";
-    meta.textContent = formatSeconds(exercise.duration);
+    meta.textContent = formatTime(exercise.duration);
 
     item.appendChild(left);
     item.appendChild(meta);
@@ -182,7 +176,7 @@ const updateExerciseList = () => {
 
 const renderTimer = () => {
   if (!currentPlan) return;
-  timerDisplayEl.textContent = formatSeconds(timeLeftSeconds);
+  timerDisplayEl.textContent = formatTime(timeLeftSeconds);
 
   const exercise = currentPlan.exercises[currentExerciseIndex];
   currentExerciseNameEl.textContent = exercise?.name || "—";
