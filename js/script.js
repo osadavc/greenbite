@@ -95,3 +95,10 @@ const formatTime = (seconds) => {
   const secs = seconds % 60;
   return `${mins}:${String(secs).padStart(2, "0")}`;
 };
+
+// Register Service Worker (PWA)
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/service-worker.js").catch(() => {});
+  });
+}
