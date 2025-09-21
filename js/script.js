@@ -63,7 +63,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 900) setMobileOpen(false);
+  if (window.innerWidth > 980) setMobileOpen(false);
 });
 
 // common utils
@@ -75,8 +75,8 @@ const formatTime = (seconds) => {
 };
 
 // Register Service Worker (PWA)
-if ("serviceWorker" in navigator) {
+if ("serviceWorker" in navigator && window.isSecureContext) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/service-worker.js").catch(() => {});
+    navigator.serviceWorker.register("./service-worker.js").catch(() => {});
   });
 }

@@ -1,4 +1,3 @@
-const HERO_QUOTES_PATH = "/assets/health_quotes.json";
 const heroQuoteElement = document.querySelector(".hero__quote-text");
 
 let heroQuotes = [];
@@ -28,29 +27,26 @@ const startHeroQuoteRotation = () => {
   }, 30000);
 };
 
-const initHeroQuotes = async () => {
+const initHeroQuotes = () => {
   if (!heroQuoteElement) return;
 
-  try {
-    const response = await fetch(HERO_QUOTES_PATH);
-    if (!response.ok) throw new Error("Failed to load quotes");
-    const data = await response.json();
+  const data =
+    typeof healthQuotes !== "undefined" && Array.isArray(healthQuotes)
+      ? healthQuotes
+      : [];
+  if (!data.length) return;
 
-    if (Array.isArray(data)) {
-      heroQuotes = data;
-      heroQuoteIndex = Math.floor(Math.random() * heroQuotes.length);
-      startHeroQuoteRotation();
-    }
-  } catch (error) {}
+  heroQuotes = data;
+  heroQuoteIndex = Math.floor(Math.random() * heroQuotes.length);
+  startHeroQuoteRotation();
 };
 
 initHeroQuotes();
 
-const HEALTH_TIPS_PATH = "/assets/health_tips.json";
 const dailyTipTextElement = document.querySelector(".daily-health-tip__tip");
 const dailyTipDateElement = document.querySelector(".daily-health-tip__date");
 
-const initDailyHealthTip = async () => {
+const initDailyHealthTip = () => {
   if (!dailyTipTextElement || !dailyTipDateElement) return;
 
   const today = new Date();
@@ -68,17 +64,15 @@ const initDailyHealthTip = async () => {
     });
   } catch (_) {}
 
-  try {
-    const response = await fetch(HEALTH_TIPS_PATH);
-    if (!response.ok) return;
+  const tips =
+    typeof healthTips !== "undefined" && Array.isArray(healthTips)
+      ? healthTips
+      : [];
+  if (!tips.length) return;
 
-    const tips = await response.json();
-
-    const dayNumber = Math.floor(today.getTime() / 86400000);
-    const tip = tips[dayNumber % tips.length];
-
-    dailyTipTextElement.textContent = tip;
-  } catch (_) {}
+  const dayNumber = Math.floor(today.getTime() / 86400000);
+  const tip = tips[dayNumber % tips.length];
+  dailyTipTextElement.textContent = tip;
 };
 
 initDailyHealthTip();

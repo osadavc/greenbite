@@ -209,17 +209,17 @@ timerResetBtn?.addEventListener("click", resetTimer);
 const nameToFile = (name) => {
   switch (name) {
     case "Rain":
-      return "/assets/audio/rain.mp3";
+      return "./assets/audio/rain.mp3";
     case "Ocean":
-      return "/assets/audio/ocean.mp3";
+      return "./assets/audio/ocean.mp3";
     case "Forest":
-      return "/assets/audio/forest.mp3";
+      return "./assets/audio/forest.mp3";
     case "Birds":
-      return "/assets/audio/birds.mp3";
+      return "./assets/audio/birds.mp3";
     case "Wind":
-      return "/assets/audio/wind.mp3";
+      return "./assets/audio/wind.mp3";
     case "Fire":
-      return "/assets/audio/fire.mp3";
+      return "./assets/audio/fire.mp3";
     default:
       return null;
   }

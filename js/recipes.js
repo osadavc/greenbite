@@ -61,7 +61,8 @@ const render = (recipes) => {
 
     const recipeMedia = document.createElement("div");
     recipeMedia.className = "recipe-card__media";
-    recipeMedia.style.backgroundImage = `url(${r.imagePath})`;
+    const imageUrl = `.${r.imagePath}`;
+    recipeMedia.style.backgroundImage = `url(${imageUrl})`;
     recipeCard.appendChild(recipeMedia);
 
     const recipeBody = document.createElement("div");
@@ -114,27 +115,21 @@ const populateCategories = (recipes) => {
   });
 };
 
-const init = async () => {
-  try {
-    const res = await fetch("./assets/recipes.json");
-    allRecipes = await res.json();
-    populateCategories(allRecipes);
-    render(allRecipes);
+const init = () => {
+  allRecipes =
+    typeof recipes !== "undefined" && Array.isArray(recipes) ? recipes : [];
+  populateCategories(allRecipes);
+  render(allRecipes);
 
-    recipeSearchInput.addEventListener("input", applyFilters);
-    recipeCategorySelect.addEventListener("change", applyFilters);
+  recipeSearchInput.addEventListener("input", applyFilters);
+  recipeCategorySelect.addEventListener("change", applyFilters);
 
-    if (recipeModal) {
-      recipeModalBackdrop.addEventListener("click", closeModal);
-      recipeModalClose.addEventListener("click", closeModal);
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && !recipeModal.hidden) closeModal();
-      });
-    }
-  } catch (err) {
-    console.error("Failed to load recipes:", err);
-    recipeEmptyElement.hidden = false;
-    recipeEmptyElement.textContent = "Failed to load recipes.";
+  if (recipeModal) {
+    recipeModalBackdrop.addEventListener("click", closeModal);
+    recipeModalClose.addEventListener("click", closeModal);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !recipeModal.hidden) closeModal();
+    });
   }
 };
 

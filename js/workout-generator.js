@@ -25,23 +25,24 @@ const playBeep = () =>
   (Tone.start(),
   new Tone.Synth().toDestination().triggerAttackRelease("C6", "16n"));
 
-fetch("/assets/workout_plans.json")
-  .then((r) => r.json())
-  .then((data) => {
-    workoutPlansData = data;
+const init = () => {
+  workoutPlansData = typeof workoutPlans !== "undefined" ? workoutPlans : null;
 
-    Object.keys(data).forEach((bodyKey) => {
+  if (workoutPlansData) {
+    Object.keys(workoutPlansData).forEach((bodyKey) => {
       const option = document.createElement("option");
       option.value = bodyKey;
 
-      // to remove the hyphens and capitalize the first letter
       option.textContent = bodyKey
         .replace(/-/g, " ")
         .replace(/\b\w/g, (m) => m.toUpperCase());
 
       bodyPartSelect.appendChild(option);
     });
-  });
+  }
+};
+
+init();
 
 bodyPartSelect.addEventListener("change", (e) => {
   const key = e.target.value;
