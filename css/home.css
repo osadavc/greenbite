@@ -207,7 +207,7 @@
 
 /* Daily Health Tip */
 .daily-health-tip {
-  background-color: color-mix(in srgb, var(--color-primary) 8%, white);
+  background-color: #ebf9f3;
   border-top: 1px solid #e8f6f0;
   border-bottom: 1px solid #eee;
 }

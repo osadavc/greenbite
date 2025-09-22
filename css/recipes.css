@@ -140,7 +140,6 @@
   padding: 1.5rem 2rem;
   max-height: calc(100vh - 8rem);
   overflow-y: scroll;
-  scrollbar-gutter: stable;
 }
 
 .recipe-modal__header {

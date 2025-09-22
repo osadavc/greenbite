@@ -23,18 +23,11 @@ body {
 html {
   scroll-behavior: smooth;
   overflow-y: auto;
-  scrollbar-gutter: stable;
 }
 
 html.no-scroll,
 body.no-scroll {
   overflow: hidden;
-}
-
-@supports not (scrollbar-gutter: stable) {
-  html {
-    overflow-y: scroll;
-  }
 }
 
 .page--inner .page__main {
